@@ -1,0 +1,15 @@
+---
+filebeat.inputs:
+- type: log 
+  tags: ['agile-portafolio'] # it can be customized by parameters
+  json.keys_under_root: true
+  json.add_error_key: true
+  paths:
+    - "${DATA_LOGS}/*-ap.json"
+  
+processors:
+- add_cloud_metadata:
+
+#----------------------------- Logstash output --------------------------------
+output.logstash:
+  hosts: ["${LOGSTASH_HOST}"]
