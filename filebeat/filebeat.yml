@@ -5,7 +5,7 @@ filebeat.inputs:
   json.keys_under_root: true
   json.add_error_key: true
   paths:
-    - "${DATA_LOGS}/*-ap.json"
+    - "${DATA_PATH}/*-ap.json"
   
 # processors:
 # - add_cloud_metadata:
