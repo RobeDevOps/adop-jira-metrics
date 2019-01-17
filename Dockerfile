@@ -14,7 +14,7 @@ RUN yum --enablerepo=extras install epel-release -y && \
 ENV LOGS_PATH=/var/log/jira \
     DATA_PATH=/opt/jira/data \
     FILEBEAT_HOME=/usr/share/filebeat \
-    APPLICATION_HOME=/opt/agile_portafolio \
+    APPLICATION_HOME=/opt/agile_portfolio \
     PERIOD=30s
 
 COPY ./filebeat/filebeat.yml ${FILEBEAT_HOME}/filebeat.yml
