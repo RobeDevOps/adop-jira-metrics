@@ -13,7 +13,7 @@ from rest_api.issue_client import IssueClient
 import watcher.logger
 
 
-class AgilePortafolio:
+class AgilePortfolio:
 
     def __init__(self):
         self.logger = logging.getLogger('JIRA-LOGS')
@@ -51,7 +51,7 @@ class AgilePortafolio:
     '''
 
     def collect_agile_metrics(self):
-        self.logger.info("Collecting agile portafolio metrics")
+        self.logger.info("Collecting agile portfolio metrics")
 
         try:
             all_projects = self.project_controller.get_all_projects()
