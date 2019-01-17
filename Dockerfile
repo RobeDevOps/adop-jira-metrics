@@ -22,7 +22,7 @@ ADD ./source ${APPLICATION_HOME}
 ADD entrypoint.sh /entrypoint.sh
 RUN mkdir -p ${LOGS_PATH} && \
     mkdir -p ${DATA_PATH} && \
-    chown filebeat:filebeat ${LOGS_PATH}} && \
+    chown filebeat:filebeat ${LOGS_PATH} && \
     chown filebeat:filebeat ${DATA_PATH} && \
     chown filebeat:filebeat ${FILEBEAT_HOME}/filebeat.yml && \
     chown -R filebeat:filebeat ${APPLICATION_HOME} && \
