@@ -7,8 +7,8 @@ filebeat.inputs:
   paths:
     - "${DATA_LOGS}/*-ap.json"
   
-processors:
-- add_cloud_metadata:
+# processors:
+# - add_cloud_metadata:
 
 #----------------------------- Logstash output --------------------------------
 output.logstash:
