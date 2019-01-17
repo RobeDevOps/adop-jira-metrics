@@ -16,8 +16,8 @@ def main():
 
     try:
 
-        agile_portafolio = AgilePortafolio()
-        agile_metrics = agile_portafolio.collect_agile_metrics()
+        agile_portfolio = AgilePortfolio()
+        agile_metrics = agile_portfolio.collect_agile_metrics()
         for metric in agile_metrics:
             serializer.logger.write(metric, DATA_PATH)
 
