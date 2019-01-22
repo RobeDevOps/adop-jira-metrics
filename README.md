@@ -1,3 +1,13 @@
+## Steps to start getting data
+
+```
+mkdir -p $HOME/jira-data
+
+docker run -d -p 9090:8080 -v $HOME/jira-data:/var/atlassian/jira --name jira blacklabelops/jira
+
+export JIRA_SERVER="http://$(curl http://instance-data/latest/meta-data/public-ipv4):9090"
+```
+
 ## JIRA Collector
 
 Application collects all the JIRA metrics required
